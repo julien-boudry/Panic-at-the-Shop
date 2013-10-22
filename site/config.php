@@ -1,5 +1,13 @@
 <?php
 
+// HTTP header
+
+	// UTF 8
+	header('Content-Type: text/html; charset=utf-8') ;
+
+
+// DB
+
 	$type_base		= 'mysql' ; // RENSEIGNER LE TYPE DE BDD : MYSQL, MARIADB, PostgreSQL.
 	$db_host		= 'localhost' ; // RENSEIGNER L'ADRESSE DU SERVEUR DE BDD
 	$db_name		= 'qpanicshop' ; // RENSEIGNER LE NOM DE LA BDD.
