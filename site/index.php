@@ -33,6 +33,14 @@
 			$validate->validate_code( $_GET['code'] ) ;
 		}
 		
+		ELSEIF	( 
+					isset( $_GET['route'] ) && $_GET['route'] == 'VALIDATE'
+				)
+		{
+			echo 'Vous ne passerez pas' ;
+			exit() ;
+		}
+		
 		ELSE
 		
 		{		
