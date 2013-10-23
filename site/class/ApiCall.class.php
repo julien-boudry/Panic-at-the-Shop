@@ -35,6 +35,7 @@ class ApiCall
 					}
 					ELSE
 					{
+						// Cas d'une soummission de score
 						IF ( $_GET['demande'] == 'PUT' )
 						{
 							$this->_demande['methode'] = 'PUT' ;
@@ -57,21 +58,38 @@ class ApiCall
 								}
 								
 								//Email
-								IF ( strlen($_GET['pseudo']) > 12 )
+								IF ( !filter_var($_GET['email'], FILTER_VALIDATE_EMAIL) )
 								{$check = FALSE ; $this->_details_erreurs[] = "Ce format d'adresse mail n'est pas valide" ;}
 								ELSE
 								{
-									$this->_demande['pseudo'] = $_GET['pseudo'] ;
+									$this->_demande['email'] = $_GET['email'] ;
+								}
+								
+								//Score
+								IF ( !ctype_digit($_GET['score']) )
+								{$check = FALSE ; $this->_details_erreurs[] = "Tricheur !" ;}
+								ELSE
+								{
+									$this->_demande['score'] = $_GET['score'] ;
 								}
 							}
-							
-							
+
 							
 						}
+						// Cas d'une demande de tableau
 						ELSEIF ( $_GET['demande'] == 'GET' )
 						{
 							$this->_demande['methode'] = 'GET' ;
+							
+							// Vérification des informations associées
+							IF ( !isset ($_GET['mode']) || !isset ($_GET['data']) )
+							{
+								$check = FALSE ;
+							}
 						}
+						
+						
+						
 						ELSE
 						{
 							$check = FALSE ;
