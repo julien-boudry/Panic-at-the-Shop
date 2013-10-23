@@ -23,6 +23,16 @@
 			$api = new ApiCall () ;
 		}
 		
+		ELSEIF	( 
+					isset( $_GET['route'] ) && !empty( $_GET['code'] ) && strlen($_GET['code']) == 250 &&
+					$_GET['route'] == 'VALIDATE'
+				)
+			
+		{			
+			$validate = new BddTalk () ;
+			$validate->validate_code( $_GET['code'] ) ;
+		}
+		
 		ELSE
 		
 		{		

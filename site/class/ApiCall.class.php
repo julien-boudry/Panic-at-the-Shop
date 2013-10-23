@@ -124,7 +124,24 @@ class ApiCall
 	// Réponse (Aiguillage)
 	private function do_action ()
 	{
-			var_dump($this->_demande) ;
+			$action = new BddTalk () ;			
+			
+			IF ($this->_demande['methode'] == 'PUT')
+			{
+							// Session code
+							$octects = 125 ;
+							$fort = TRUE ;
+				$this->_demande['etat'] = bin2hex( openssl_random_pseudo_bytes($octects, $fort) ) ;
+				
+				$action->add_score ($this->_demande) ;
+				var_dump($this->_demande) ;
+			}
+			ELSEIF ($this->_demande['methode'] == 'GET')
+			{
+				$action->add_score ($this->_demande) ;
+				var_dump($this->_demande) ;
+			}
+			
 	}
 	
 	// Erreur
