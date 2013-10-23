@@ -11,18 +11,21 @@ class ApiCall
 	public function __construct ()
 	{
 	
-		IF ( !$this->test_ask() )
+		IF ( !$this->form_ask() )
 		{
-			$this->_details_erreurs[] = "L'appel a l'API n'est pas correctement formule" ;
-			
+			$this -> _details_erreurs[] = "L'appel a l'API n'est pas correctement formule" ;			
 			$this -> error () ;
+		}
+		ELSE
+		{
+			$this->do_action () ;
 		}
 	
 	}
 	
 	
 		// Test de la demande API
-		private function test_ask ()
+		private function form_ask ()
 		{
 			$check = TRUE ;
 			
@@ -86,17 +89,31 @@ class ApiCall
 							{
 								$check = FALSE ;
 							}
-						}
-						
-						
+							ELSE
+							{
+								//Mode
+								IF ( $_GET['mode'] == 'page' || $_GET['mode'] == 'pseudo' )
+								{$this->_demande['mode'] = $_GET['mode'] ;}
+								ELSE
+								{
+									$check = FALSE ; $this->_details_erreurs[] = "Ce mode n'est pas valide" ;
+								}
+								
+								//Data
+								IF ( 1 == 2 )
+								{$this->_demande['mode'] = $_GET['mode'] ;}
+								ELSE
+								{}
+								
+							}						
+							
+						}					
 						
 						ELSE
 						{
 							$check = FALSE ;
 						}
 					}
-					
-				// Cas d'une demande PUT	
 						
 			
 			// Retour du resultant
@@ -105,10 +122,9 @@ class ApiCall
 	
 	
 	// Réponse (Aiguillage)
-	private function reponse ()
+	private function do_action ()
 	{
-	
-	
+			var_dump($this->_demande) ;
 	}
 	
 	// Erreur
