@@ -26,3 +26,18 @@ nav {
 	margin:auto;
 	width:7cm;
 }
+
+/* ----------- */
+
+#coming-box {
+	position: relative;
+	right: 1cm;
+	top: -1.5cm;
+}
+
+.coming{
+	width:3.5cm;
+	float:right;
+	
+	margin-left:1cm;
+}
