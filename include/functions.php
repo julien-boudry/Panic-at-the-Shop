@@ -70,3 +70,17 @@ En vous souhaitant bonne chance !
 		}
 		
 	}
+
+	
+// Fabrique un tableau des scores
+	function the_leaderboard ($paging = TRUE, $pagination = 1, $looking = NULL)
+	{
+		$action = new BddTalk () ;		
+		$data = $action->calc_leaderboard () ;
+		
+		// Retraitement
+		
+		
+		
+		
+	}

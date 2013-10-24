@@ -76,8 +76,7 @@ class ApiCall
 									$this->_demande['score'] = $_GET['score'] ;
 								}
 							}
-
-							
+	
 						}
 						// Cas d'une demande de tableau
 						ELSEIF ( $_GET['demande'] == 'GET' )

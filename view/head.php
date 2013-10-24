@@ -19,26 +19,27 @@
 	
 	<script>
 	
-	/* AJAX */
-	$(document).ready(function() {
-    $('.menu_button').on('click', function() {	 
-			var page = $(this).attr('id');
+		/* AJAX */
+		$(document).ready(function()
+		{
+			$('.menu_button').on('click', function() {	 
+					var page = $(this).attr('id');
 
-				$.ajax({
-					url: $(this).attr('action'),
-					type: 'POST',
-					data: 'page='+page,
-					dataType: 'html',
-					
-					success: function(html)
-					{
-						$("#content").html(html);
-					}
-					
+						$.ajax({
+							url: $(this).attr('action'),
+							type: 'POST',
+							data: 'page='+page,
+							dataType: 'html',
+							
+							success: function(html)
+							{
+								$("#content").html(html);
+							}
+							
+						});
+					return false;
 				});
-			return false;
 		});
-	});
 	
 	</script>
 	
