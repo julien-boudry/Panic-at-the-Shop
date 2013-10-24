@@ -1,5 +1,4 @@
 <section id="content">
 
-game
-
+about
 </section>
