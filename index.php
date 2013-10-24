@@ -1,5 +1,7 @@
 <?php
 
+$imperatif = NULL ;
+
 	// Config
 	
 		require_once 'config.php' ;
@@ -31,6 +33,10 @@
 		{			
 			$validate = new BddTalk () ;
 			$validate->validate_code( $_GET['code'] ) ;
+			
+			$imperatif = 'VALIDATING' ;
+
+			require_once 'include/view_call.php' ;
 		}
 		
 		ELSEIF	( 

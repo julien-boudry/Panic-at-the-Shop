@@ -55,3 +55,18 @@ En vous souhaitant bonne chance !
 		
 		mail($to,$subject,$message,$headers);
 	}
+	
+	
+	function jsLibrairies($nom_librairie, $version)
+	{
+		IF($nom_librairie == 'jquery')
+		{
+			echo '<script src="//ajax.googleapis.com/ajax/libs/jquery/'.$version.'/jquery.min.js"></script>' ;
+		}
+		
+		IF($nom_librairie == 'jquery-ui')
+		{
+			echo '<script src="//ajax.googleapis.com/ajax/libs/jqueryui/'.$version.'/jquery-ui.min.js"></script>' ;
+		}
+		
+	}
