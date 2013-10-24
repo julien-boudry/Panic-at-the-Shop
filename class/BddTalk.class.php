@@ -36,7 +36,9 @@ class BddTalk
 							'code'	=> $code
 						) ;
 						
-		requete ($sql, 'prepare', $param) ;		
+		requete ($sql, 'prepare', $param) ;
+
+		echo 'Votre score est validé, merci et bonnes courses !' ;
 	
 	}
 	
