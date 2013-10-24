@@ -75,6 +75,19 @@ En vous souhaitant bonne chance !
 // Fabrique un tableau des scores
 	function the_leaderboard ($paging = TRUE, $pagination = 1, $looking = NULL)
 	{
+	?>
+	      <table border="0" id="table_score">
+
+          <tr>
+            <th>Rank</th>
+			<th>Pseudo</th>
+			<th>Score</th>
+          </tr>
+	<?php
+	
+	
+		$nbr = 20 ; $v_nbr = $nbr + 1 ;
+		
 		$action = new BddTalk () ;		
 		$data = $action->calc_leaderboard () ;
 		
@@ -84,7 +97,7 @@ En vous souhaitant bonne chance !
 		FOREACH ( $data as $cle => $element )
 		{
 		
-				IF ( $i < ($pagination * 51) && $i > ( ($pagination - 1) * 51) )
+				IF ( $i < ($pagination * $v_nbr) && $i > ( ($pagination - 1) * $v_nbr) )
 				{
 				echo '<tr>' ;
 				
@@ -95,8 +108,15 @@ En vous souhaitant bonne chance !
 				echo '</tr>' ;
 				}
 			
-			$i++ ;	
+			$i++ ;
 		}
+		
+	?>
+	      </table>
+	  
+	  <a href="#" id="previous">Previous</a> | <a href="#" id="Nexts">Next</a>
+	  
+	<?php
 		
 		
 	}
