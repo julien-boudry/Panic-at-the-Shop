@@ -11,7 +11,7 @@
 	</div>
 	
 	<nav>
-		<span id="page_game" class="menu_button"><a href="#">The Game</a></span> | <span id="page_score" class="menu_button"><a href="#">The scoreboard</a></span> | <span id="page_about" class="menu_button"><a href="#">About US</a></span>
+		<span id="page_game" class="menu_button"><a href="#">The Game</a></span> | <span id="page_score" class="menu_button"><a href="#">The scoreboard</a></span> | <span id="page_about" class="menu_button"><a href="#">Play More, play better</a></span>
 	</nav>
 
 </header>
