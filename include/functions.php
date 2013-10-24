@@ -37,16 +37,16 @@
 		$subject = "Validez votre score Black Friday Run";
 		
 		$message =	"
-						Bonjour ".$pseudo.",
+Bonjour ".$pseudo.",
 						
-						Vous avez soumis votre score de ".$score." points via Black Friday Run.
+Vous avez soumis votre score de ".$score." points via Black Friday Run.
 						
-						Pour valider votre adresse mail et l'apparition du score, merci de valider le lien suivant :
+Pour valider votre adresse mail et l'apparition du score, merci de valider le lien suivant :
 						
-						http://".$_SERVER['SERVER_NAME']."/?route=VALIDATE&code=".$code."
+http://".$_SERVER['SERVER_NAME']."/?route=VALIDATE&code=".$code."
 						
 						
-						En vous souhaitant bonne chance !
+En vous souhaitant bonne chance !
 					";
 		
 		

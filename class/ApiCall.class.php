@@ -139,8 +139,7 @@ class ApiCall
 				send_activate_mail	 ($this->_demande['email'], $this->_demande['score'], $this->_demande['pseudo'], $this->_demande['etat']) ;
 				
 				
-				
-				var_dump($this->_demande) ;
+				echo json_encode ( array('etat' => TRUE) ) ;
 			}
 			ELSEIF ($this->_demande['methode'] == 'GET')
 			{
