@@ -19,7 +19,7 @@
 	
 	<script>
 	
-		/* AJAX */
+		/* AJAX PAGES */
 		$(document).ready(function()
 		{
 			$('.menu_button').on('click', function() {	 
@@ -39,7 +39,28 @@
 						});
 					return false;
 				});
+				
 		});
+		
+
+			/* AJAX Pagination */
+			function banane (pagination) {	 
+
+						$.ajax({
+							url: $(this).attr('action'),
+							type: 'POST',
+							data: 'pagination='+pagination,
+							dataType: 'html',
+							
+							success: function(html)
+							{
+								$("#score-box").html(html);
+							}
+							
+						});
+					return false;
+				};
+
 	
 	</script>
 	
