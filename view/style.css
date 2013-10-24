@@ -27,6 +27,16 @@ nav {
 	width:7cm;
 }
 
+iframe {
+	display:block;
+	
+
+	margin:auto;
+	
+	width:638px;
+	height:412px;
+}
+
 /* ----------- */
 
 #coming-box {
