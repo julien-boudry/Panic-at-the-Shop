@@ -29,3 +29,9 @@
 			die('Erreur : ' . $e->getMessage());
 		
 	}
+	
+	
+// VERSION DES LIBS JS DESIREES
+	$config['js-libs'] = array(	'jquery' => 	'2.0.3',
+								'jquery-ui' => 	'1.10.3'
+							);
