@@ -1,17 +1,26 @@
 
 <header>
 
-	<h1>
-		Black Friday Run
-	</h1>
+    <figure>
+        <img src="images/header.png">
+    </figure>
 	
-	<div id="coming-box">
-		<img class="coming" src="img/appstore_coming.png" alt="Coming soon App Store">
-		<img class="coming" src="img/android_coming.png" alt="Coming soon Android">
-	</div>
+    <section id="application">
+        <figure>
+            <img src="images/android.png">
+        </figure>
+        <figure>
+            <img src="images/apple.png">
+        </figure>
+    </section>
 	
 	<nav>
-		<span id="page_game" class="menu_button"><a href="#">The Game</a></span> | <span id="page_score" class="menu_button"><a href="#">The Leaders board</a></span> | <span id="page_about" class="menu_button"><a href="#">Play More, play better</a></span>
+		
+		<ul>
+			<li id="page_game" class="active menu_button"><a href="">The Game</a></li>
+			<li id="page_score" class="menu_button"><a href="">The Leaders board</a></li>
+			<li id="page_about" class="menu_button"><a href="">Play More, play better</a></li>
+		</ul>
 	</nav>
 
 </header>
