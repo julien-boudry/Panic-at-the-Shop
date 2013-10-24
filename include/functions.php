@@ -73,7 +73,7 @@ En vous souhaitant bonne chance !
 
 	
 // Fabrique un tableau des scores
-	function the_leaderboard ($paging = TRUE, $pagination = 1, $looking = NULL)
+	function the_leaderboard ($pagination = 1, $looking = NULL)
 	{
 	?>
 	      <table border="0" id="table_score">
@@ -114,7 +114,7 @@ En vous souhaitant bonne chance !
 	?>
 	      </table>
 	  
-	  <a href="#" id="previous">Previous</a> | <a href="#" id="Nexts">Next</a>
+	  <span class="pagination" id="previous" onclick="banane('<?php echo ($pagination - 1); ?>')"><a href="#">Previous</a></span> | <span class="pagination" id="next" onclick="banane('<?php echo ($pagination + 1); ?>')"><a href="#" >Next</a></span>
 	  
 	<?php
 		

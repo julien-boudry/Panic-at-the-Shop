@@ -1,6 +1,6 @@
 <?php
 
-	IF ( !isset($_POST['page']) )
+	IF ( !isset($_POST['page']) && !isset($_POST['pagination']) )
 	{
 		require_once 'view/head.php' ;
 		
@@ -11,7 +11,7 @@
 		require_once 'view/footer.php' ;
 	}
 	
-	ELSE
+	ELSEIF ( isset($_POST['page']) )
 	{
 		IF ( $_POST['page'] == 'page_game' )
 		{
@@ -24,9 +24,10 @@
 		ELSEIF ( $_POST['page'] == 'page_about' )
 		{
 			require_once 'view/about.php' ;
-		}
+		}	
 		
-		
-		
-		
+	}
+	ELSEIF ( isset($_POST['pagination']) )
+	{
+		the_leaderboard ($_POST['pagination']);
 	}
