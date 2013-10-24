@@ -22,26 +22,24 @@
 	/* AJAX */
 	$(document).ready(function() {
     $('.menu_button').on('click', function() {	 
-			var input = $('#input').val();
-			var algo = $('#methode').val();
-	 
-			if(input == '' || algo == '') {
-				alert('Les champs doivent êtres remplis');
-			} else {
+			var page = $(this).attr('id');
+
 				$.ajax({
 					url: $(this).attr('action'),
-					type: $(this).attr('method'),
-					data: $(this).serialize(),
+					type: 'POST',
+					data: 'page='+page,
 					dataType: 'json',
-					success: function(json) {
+					
+					success: function(json)
+					{
 						if(json.success == 'ok') {
 							$("div#content").prepend(json.html);
 						} else {
 							alert('Erreur : '+ json.success);
 						}
 					}
+					
 				});
-			}
 			return false;
 		});
 	});

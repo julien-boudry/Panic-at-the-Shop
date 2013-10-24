@@ -1,1 +1,28 @@
+body {
+	margin:0;
+}
 
+
+header {
+	margin: 0 0 0 0 ;
+
+	height:3cm;
+	border-bottom:1px solid;
+	
+	position:fixed;
+	top:0px;
+	
+	width:100%;
+	min-width: 25cm;
+}
+
+#content {
+
+	margin-top:3cm;
+
+}
+
+nav {
+	margin:auto;
+	width:7cm;
+}
