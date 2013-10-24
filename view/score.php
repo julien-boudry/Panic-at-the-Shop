@@ -1,5 +1,5 @@
 <section id="content">
 
-game
+score
 
 </section>

@@ -28,15 +28,11 @@
 					url: $(this).attr('action'),
 					type: 'POST',
 					data: 'page='+page,
-					dataType: 'json',
+					dataType: 'html',
 					
-					success: function(json)
+					success: function(html)
 					{
-						if(json.success == 'ok') {
-							$("div#content").prepend(json.html);
-						} else {
-							alert('Erreur : '+ json.success);
-						}
+						$("#content").html(html);
 					}
 					
 				});
