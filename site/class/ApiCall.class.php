@@ -134,6 +134,12 @@ class ApiCall
 				$this->_demande['etat'] = bin2hex( openssl_random_pseudo_bytes($octects, $fort) ) ;
 				
 				$action->add_score ($this->_demande) ;
+				
+				// Envoi du mail de confirmation
+				send_activate_mail	 ($this->_demande['email'], $this->_demande['score'], $this->_demande['pseudo'], $this->_demande['etat']) ;
+				
+				
+				
 				var_dump($this->_demande) ;
 			}
 			ELSEIF ($this->_demande['methode'] == 'GET')
