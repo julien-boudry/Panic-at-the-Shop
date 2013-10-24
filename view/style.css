@@ -17,9 +17,7 @@ header {
 }
 
 #content {
-
 	margin-top:3cm;
-
 }
 
 nav {
@@ -50,4 +48,9 @@ iframe {
 	float:right;
 	
 	margin-left:1cm;
+}
+
+#score-box {
+	margin:auto;
+	width:0px;
 }

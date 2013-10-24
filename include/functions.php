@@ -80,7 +80,23 @@ En vous souhaitant bonne chance !
 		
 		// Retraitement
 		
+		$i = 1 ;
+		FOREACH ( $data as $cle => $element )
+		{
 		
+				IF ( $i < ($pagination * 51) && $i > ( ($pagination - 1) * 51) )
+				{
+				echo '<tr>' ;
+				
+					echo '<td>'.($cle + 1).'</td>' ;
+					echo '<td>'.$element[0].'</td>' ;
+					echo '<td>'.$element[1].'</td>' ;
+				
+				echo '</tr>' ;
+				}
+			
+			$i++ ;	
+		}
 		
 		
 	}
