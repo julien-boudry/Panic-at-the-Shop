@@ -43,7 +43,7 @@
 						
 						Pour valider votre adresse mail et l'apparition du score, merci de valider le lien suivant :
 						
-						http://BlackFridayRun.artisanat-furieux.net/site/?route=VALIDATE&code=".$code."
+						http://".$_SERVER['SERVER_NAME']."/?route=VALIDATE&code=".$code."
 						
 						
 						En vous souhaitant bonne chance !
