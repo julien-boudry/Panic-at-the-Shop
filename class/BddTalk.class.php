@@ -38,7 +38,13 @@ class BddTalk
 						
 		requete ($sql, 'prepare', $param) ;
 
-		echo 'Votre score est validé, merci et bonnes courses !' ;
+		echo 'Votre score est validé, merci et bonnes courses !' ;	
+	}
+	
+	public function calc_leaderboard ()
+	{
+	
+		return TRUE ;
 	
 	}
 	
