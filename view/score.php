@@ -4,17 +4,16 @@
 
 	<section id="score-box">
 
-      <table cellpadding="0" cellspacing="0" border="0" id="table_score">
+      <table border="0" id="table_score">
 
-          <th>
-            <td>Rank</td>
-			<td>Winner</td>
-			<td>Score</td>
-          </th>
+          <tr>
+            <th>Rank</th>
+			<th>Pseudo</th>
+			<th>Score</th>
+          </tr>
 		  
-		  <tr>
 			<?php the_leaderboard() ; ?>
-		  </tr>
+
 
       </table>
 

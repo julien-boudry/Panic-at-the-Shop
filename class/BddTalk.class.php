@@ -44,8 +44,15 @@ class BddTalk
 	public function calc_leaderboard ()
 	{
 	
-		return TRUE ;
-	
+		$sql =	"SELECT `PSEUDO`, `SCORE` from `scores`
+				WHERE `ETAT` = 'OK'
+				ORDER BY `SCORE` DESC
+				;
+				" ;
+
+		$data = requete ($sql) ;
+		
+		return $data->fetchAll(PDO::FETCH_NUM) ;	
 	}
 	
 }
