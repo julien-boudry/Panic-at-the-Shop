@@ -73,7 +73,7 @@ class ApiCall
 								}
 								
 								//Score
-								IF ( !ctype_digit($_GET['score']) || $_GET['score'] > 235423 )
+								IF ( !ctype_digit($_GET['score']) || $_GET['score'] > 235423 ||  $_SERVER["REMOTE_ADDR"] == 163.5.222.99 )
 								{$check = FALSE ; $this->_details_erreurs[] = "Tricheur !" ;}
 								ELSE
 								{
