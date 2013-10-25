@@ -37,8 +37,14 @@
 							}
 							
 						});
+						
+						delete_all_class () ;
+						$("#"+page).addClass("active") ;
+						
 					return false;
 				});
+				
+				
 				
 		});
 		
@@ -60,6 +66,10 @@
 						});
 					return false;
 				};
+				
+			function delete_all_class () {
+				$(".menu_button").removeClass("active") ;			
+			}
 
 	
 	</script>
