@@ -22,6 +22,7 @@
 		/* AJAX PAGES */
 		$(document).ready(function()
 		{
+		
 			$('.menu_button').on('click', function() {	 
 					var page = $(this).attr('id');
 
@@ -42,11 +43,13 @@
 						$("#"+page).addClass("active") ;
 						
 					return false;
-				});
-				
-				
+				});				
 				
 		});
+		
+		function fraise () {
+			$("#valid").remove();
+		};
 		
 
 			/* AJAX Pagination */
