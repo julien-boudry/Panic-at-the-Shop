@@ -98,7 +98,7 @@ En vous souhaitant bonne chance !
 		FOREACH ( $data as $cle => $element )
 		{
 		
-				IF ( $i < ($pagination * $v_nbr) && $i > ( ($pagination - 1) * $v_nbr) )
+				IF ( $i < ($pagination * $v_nbr) && $i >= ( ($pagination - 1) * $v_nbr) )
 				{
 					echo '<tr>' ;
 					
