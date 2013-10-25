@@ -7,10 +7,10 @@
 	
     <section id="application">
         <figure>
-            <img src="images/android.png">
+            <img src="images/android_coming.png">
         </figure>
         <figure>
-            <img src="images/apple.png">
+            <img src="images/appstore_coming.png">
         </figure>
     </section>
 	

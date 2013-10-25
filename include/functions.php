@@ -114,7 +114,7 @@ En vous souhaitant bonne chance !
 	?>
 	      </table>
 	  
-	  <span class="pagination" id="previous" onclick="banane('<?php echo ($pagination - 1); ?>')">Previous</span> | <span class="pagination" id="next" onclick="banane('<?php echo ($pagination + 1); ?>')">Next</span>
+	  <span class="pagination" id="previous" onclick="banane('<?php echo ($pagination - 1); ?>')">Previous</span> <span class="pagination" id="next" onclick="banane('<?php echo ($pagination + 1); ?>')">Next</span>
 	  
 	<?php
 		

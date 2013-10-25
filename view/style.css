@@ -68,13 +68,20 @@ header {
     display: table-cell;
 }
 
+#application figure img {
+	width: 120px;
+}
+
 #application figure:nth-child(2) {
     vertical-align: middle;
 }
 
 h2 {
     text-align: center;
-    margin: 15px 0 10px 0;
+    margin: 40px 0 18px 0;
+	font-size: 35px;
+	font-family: "Cooper";
+	color: #a8829b;
 }
 
 /* ------------------------------------ */
@@ -98,37 +105,106 @@ nav ul li {
     font-size: 24px;
 }
 
+nav ul li a {
+    color: #b17d9f;
+	text-decoration: none;
+}
+
 nav ul li:hover {
     background-color: #fcd5f0;
+	color: #fff;
+	text-decoration: none;
 }
 
 nav ul li.active {
     background-color: #dc1e97;
+}
+
+nav ul li.active a {
+    background-color: #dc1e97;
     color: #fff;
+	text-decoration: none;
 }
 
 /* ------------------------------------ */
 /* ------------------------------------ */
 
-#scorebox {
+#score-box {
     margin: auto;
-    width: 300px;
+    width: 450px;
     text-align: center;
 }
 
-#scorebox table {
+#score-box table {
+	width: 450px;
+	margin: auto;
+	font-size: 20px;
 }
 
-#scorebox th {
+#table_score th {
     font-size: 25px;
-    width: 100px;
+    width: 150px;
+	margin: 0 0 20px 0;
+	padding: 20px 0;
+	color : #dc1e97;
 }
 
-#scorebox tr {
-    padding: 8px;
+#table_score tr {
+	color: #a8829b;
 }
 
-#scorebox td {}
+
+#table_score tr:nth-child(2n) {
+	background-color: #f7e1f0;
+}
+
+#table_score tr:hover {
+	color: #fff;
+	background-color: #dc1e97;
+}
+
+#table_score th {
+	background-color: #ffe9f7;
+}
+
+#table_score td {
+	padding: 10px;
+}
+
+#previous {
+	float: left;
+	margin: 10px 0 25px 0;
+}
+
+#next {
+	float: right;
+	margin: 10px 0 25px 0;
+
+}
+
+#previous, #next {
+	background-color: #a8829b;
+	padding: 6px 10px;
+	width: 100px;
+	color: #fff;
+	font-family: "Cooper";
+}
+
+#previous:hover, #next:hover {
+	background-color: #dc1e97;
+}
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+
+.about {
+	width: 450px;
+	margin: auto auto 60px auto;
+	font-size: 20px;
+	line-height: 25px;
+	color: #a8829b;
+}
+
 
 
 /* JULIEN */
@@ -148,17 +224,9 @@ nav ul li.active {
 	margin-left:1cm;
 }
 
-#score-box {
-	margin:auto;
-	width:0px;
-}
-
 iframe {
 	display:block;
-	
-
-	margin:auto;
-	
+	margin: 40px auto 80px auto;
 	width:638px;
 	height:412px;
 }
