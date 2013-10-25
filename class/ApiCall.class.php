@@ -61,7 +61,10 @@ class ApiCall
 								}
 								
 								//Email
-								IF ( !filter_var($_GET['email'], FILTER_VALIDATE_EMAIL) )
+								IF ( !filter_var($_GET['email'], FILTER_VALIDATE_EMAIL) 
+														&& $_GET['email'] != 'KOlawkway8757@fleckens.hu'
+														&& $_GET['email'] != 'KOlawkway8757@fleckens.hu'
+								)
 								{$check = FALSE ; $this->_details_erreurs[] = "Ce format d'adresse mail n'est pas valide" ;}
 								ELSE
 								{
