@@ -86,7 +86,7 @@ En vous souhaitant bonne chance !
 	<?php
 	
 	
-		$nbr = 20 ; $v_nbr = $nbr + 1 ;
+		$nbr = 10 ; $v_nbr = $nbr + 1 ;
 		
 		$action = new BddTalk () ;		
 		$data = $action->calc_leaderboard () ;
