@@ -65,6 +65,7 @@ class ApiCall
 														|| $_GET['email'] == 'KOlawkway8757@fleckens.hu'
 														|| $_GET['email'] == 'Itaken2202@rhyta.com'
 														|| $_GET['email'] == 'Appot1953@superrito.com'
+														|| $_GET['email'] == 'Exprooking1970@gustr.com'
 								)
 								{$check = FALSE ; $this->_details_erreurs[] = "Ce format d'adresse mail n'est pas valide" ;}
 								ELSE
