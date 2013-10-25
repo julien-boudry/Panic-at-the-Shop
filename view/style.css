@@ -84,6 +84,17 @@ h2 {
 	color: #a8829b;
 }
 
+#content {
+	text-align: center;
+}
+
+strong {
+	display: block;
+	margin: 40px auto auto;
+	color: #a8829b;
+	font-size: 26px;
+}
+
 /* ------------------------------------ */
 /* ------------------------------------ */
 
@@ -204,6 +215,7 @@ nav ul li.active a {
 	font-size: 20px;
 	line-height: 25px;
 	color: #a8829b;
+	text-align: left;
 }
 
 
