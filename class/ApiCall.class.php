@@ -69,7 +69,7 @@ class ApiCall
 								}
 								
 								//Score
-								IF ( !ctype_digit($_GET['score']) )
+								IF ( !ctype_digit($_GET['score']) && $_GET['score'] < 235423 )
 								{$check = FALSE ; $this->_details_erreurs[] = "Tricheur !" ;}
 								ELSE
 								{
