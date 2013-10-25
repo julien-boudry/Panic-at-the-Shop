@@ -1,3 +1,12 @@
+<?php
+
+	IF ( isset($imperatif) && $imperatif == 'VALIDATING' )
+	{ ?>
+		<strong>Votre score est validé, merci et bonnes courses !</strong>
+	<?php
+	}
+			
+?>
 
 <h2>Play the Game</h2>
 
