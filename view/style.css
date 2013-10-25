@@ -185,6 +185,7 @@ nav ul li.active a {
 #previous, #next {
 	background-color: #a8829b;
 	padding: 6px 10px;
+	margin-top: 20px;
 	width: 100px;
 	color: #fff;
 	font-family: "Cooper";

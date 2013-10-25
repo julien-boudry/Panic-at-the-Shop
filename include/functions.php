@@ -90,22 +90,25 @@ En vous souhaitant bonne chance !
 		
 		$action = new BddTalk () ;		
 		$data = $action->calc_leaderboard () ;
+		$entry = count($data) ;
 		
 		// Retraitement
 		
-		$i = 1 ;
+		$i = 1 ; $i2 = 0 ;
 		FOREACH ( $data as $cle => $element )
 		{
 		
 				IF ( $i < ($pagination * $v_nbr) && $i > ( ($pagination - 1) * $v_nbr) )
 				{
-				echo '<tr>' ;
-				
-					echo '<td>'.($cle + 1).'</td>' ;
-					echo '<td>'.$element[0].'</td>' ;
-					echo '<td>'.$element[1].'</td>' ;
-				
-				echo '</tr>' ;
+					echo '<tr>' ;
+					
+						echo '<td>'.($cle + 1).'</td>' ;
+						echo '<td>'.$element[0].'</td>' ;
+						echo '<td>'.$element[1].'</td>' ;
+					
+					echo '</tr>' ;
+					
+					$i2++;
 				}
 			
 			$i++ ;
@@ -114,7 +117,8 @@ En vous souhaitant bonne chance !
 	?>
 	      </table>
 	  
-	  <span class="pagination" id="previous" onclick="banane('<?php echo ($pagination - 1); ?>')">Previous</span> <span class="pagination" id="next" onclick="banane('<?php echo ($pagination + 1); ?>')">Next</span>
+	  <?php IF ($pagination > 1) { ?> <span class="pagination" id="previous" onclick="banane('<?php echo ($pagination - 1); ?>')">Previous</span> <?php } ?>
+	  <?php IF ( $entry > ($pagination * $nbr) ) { ?> <span class="pagination" id="next" onclick="banane('<?php echo ($pagination + 1); ?>')">Next</span> <?php } ?>
 	  
 	<?php
 		
