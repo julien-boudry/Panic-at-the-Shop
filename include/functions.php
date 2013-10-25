@@ -103,7 +103,7 @@ En vous souhaitant bonne chance !
 					echo '<tr>' ;
 					
 						echo '<td>'.($cle + 1).'</td>' ;
-						echo '<td>'.$element[0].'</td>' ;
+						echo '<td>'.htmlspecialchars($element[0]).'</td>' ;
 						echo '<td>'.$element[1].'</td>' ;
 					
 					echo '</tr>' ;
