@@ -3,6 +3,7 @@
 
     <figure>
         <img src="images/header.png">
+		<figcaption>header de Black Friday Run</figcaption>
     </figure>
 	
     <section id="application">
