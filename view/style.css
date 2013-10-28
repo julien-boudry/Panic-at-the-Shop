@@ -72,6 +72,10 @@ header {
 	width: 120px;
 }
 
+#application figure figcaption {
+	display: none;
+}
+
 #application figure:nth-child(2) {
     vertical-align: middle;
 }

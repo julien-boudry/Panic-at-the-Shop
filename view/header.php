@@ -8,9 +8,11 @@
     <section id="application">
         <figure>
             <img src="images/android_coming.png">
+			<figcaption>Android coming</figcaption>
         </figure>
         <figure>
             <img src="images/appstore_coming.png">
+			<figcaption>Appstore coming</figcaption>
         </figure>
     </section>
 	
