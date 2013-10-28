@@ -2,7 +2,7 @@
 
 	IF ( isset($imperatif) && $imperatif == 'VALIDATING' )
 	{ ?>
-		<strong id="valid">Votre score est validé, merci et bonnes courses !</strong>
+		<strong id="valid">Your score is validated, thank you and good shopping!</strong>
 	<?php
 	}
 			
