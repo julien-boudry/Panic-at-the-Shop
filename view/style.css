@@ -58,6 +58,10 @@ header {
     margin: auto;
 }
 
+header figcaption {
+	display: none;
+}
+
 #application {
     width: 210px;
     margin: 30px auto auto;
